@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F3F5F0">
+  <title>各省高考化学真题考点分布查询（2022-2026）</title>
+  <meta name="description" content="家长学生输入省份，查看该省 2022-2026 年高考化学独立卷逐题考点分布，含 24 个省份 1253 条已核对数据">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="各省高考化学真题考点分布查询（2022-2026）">
+  <meta property="og:description" content="家长学生输入省份，查看该省 2022-2026 年高考化学独立卷逐题考点分布，含 24 个省份 1253 条已核对数据">
+  <meta property="og:image" content="assets/img/favicon.png">
+  <link rel="icon" href="assets/img/favicon.png">
+
+  <link rel="preconnect" href="https://miaoda.feishu.cn">
+  <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=IBM+Plex+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fufen.css">
+  <link rel="stylesheet" href="css/mockref.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="source-modal" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- 站点配置（必须最先加载） -->
+  <script src="config.js"></script>
+
+  <!-- 数据（必须最先加载） -->
+  <script src="assets/data/exam-data.js"></script>
+
+  <!-- 领域模块 -->
+  <script src="js/modules/cutoff.js"></script>
+  <script src="js/modules/fufen.js"></script>
+  <script src="js/modules/mockref.js"></script>
+
+  <!-- 核心工具与视图骨架 -->
+  <script src="js/core/util.js"></script>
+  <script src="js/core/views.js"></script>
+  <script src="js/core/syn-groups.js"></script>
+  <script src="js/core/kd-search.js"></script>
+
+  <!-- 子视图 -->
+  <script src="js/views/fufen-view.js"></script>
+  <script src="js/views/mockref-view.js"></script>
+
+  <!-- 功能：PDF 导出 -->
+  <script src="js/features/export-pdf.js"></script>
+
+  <!-- 应用入口（必须最后加载） -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
